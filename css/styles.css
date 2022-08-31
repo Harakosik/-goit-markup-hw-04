@@ -126,12 +126,7 @@ body {
 
   color: var(--grey-color);
 }
-.header-mail:hover,
-.header-mail:focus,
-.header-phone:hover,
-.header-phone:focus {
-  color: var(--blue-logo-color);
-}
+
 .header-phone {
   font-family: 'Roboto';
   font-style: normal;
@@ -185,6 +180,35 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header-mail:hover,
+.header-mail:focus,
+.header-phone:hover,
+.header-phone:focus {
+  color: var(--blue-logo-color);
+}
+
+.header-mail::before {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/svg/envelope.svg);
+}
+.header-phone::before {
+  fill: currentColor;
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/svg/smartphone.svg);
 }
 
 /* =========== Header =============*/
@@ -264,7 +288,8 @@ body {
 /* ======== Section about ======== */
 .about,
 .about-team,
-.team {
+.team,
+.regular-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -332,6 +357,29 @@ body {
   display: flex;
   gap: 30px;
 }
+.feature::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-size: 70px;
+}
+.icon-antenna::before {
+  background-image: url(../images/svg/antenna\ 1.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/svg/clock\ 1\ .svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/svg/diagram\ 1.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/svg/astronaut\ 1\ .svg);
+}
 /* ======== Section about ======== */
 
 /* ======== Section team ========= */
@@ -381,6 +429,28 @@ img {
   color: var(--current-color-dark);
 }
 
+.client {
+  margin-bottom: 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--current-color-dark);
+}
+
+.logo-client {
+  display: flex;
+  justify-content: space-between;
+}
+
+.typ-logo {
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
 /* ======== Section team ========= */
 
 /* ========= Footer ============= */
