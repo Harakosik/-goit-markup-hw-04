@@ -115,6 +115,18 @@ body {
 .header-item .current {
   color: var(--blue-logo-color);
 }
+.envelope {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+}
+.smartphone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+}
 
 .header-mail {
   display: flex;
@@ -125,7 +137,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
+  margin-right: 30px;
   color: var(--grey-color);
 }
 
@@ -191,18 +203,6 @@ body {
 .header-phone:hover,
 .header-phone:focus {
   color: var(--blue-logo-color);
-}
-.envelope {
-  content: '';
-  width: 16px;
-  height: 12px;
-  fill: #757575;
-}
-.smartphone {
-  content: '';
-  width: 10px;
-  height: 16px;
-  fill: #757575;
 }
 
 /* =========== Header =============*/
