@@ -119,13 +119,20 @@ body {
   margin-right: 10px;
   width: 16px;
   height: 12px;
-  fill: #757575;
+  fill: currentColor;
 }
 .smartphone {
   margin-right: 10px;
   width: 10px;
   height: 16px;
-  fill: #757575;
+  fill: currentColor;
+}
+
+.header-mail:hover,
+.header-mail:focus,
+.header-phone:hover,
+.header-phone:focus {
+  color: var(--blue-logo-color);
 }
 
 .header-mail {
@@ -143,6 +150,7 @@ body {
 
 .header-phone {
   display: flex;
+  align-items: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -196,13 +204,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.header-mail:hover,
-.header-mail:focus,
-.header-phone:hover,
-.header-phone:focus {
-  color: var(--blue-logo-color);
 }
 
 /* =========== Header =============*/
@@ -286,6 +287,9 @@ body {
 .regular-clients {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.about-team {
+  padding-top: 0;
 }
 .about-title {
   padding: 0;
@@ -436,7 +440,7 @@ img {
 }
 
 .regular-clients {
-  background-color: #e5e5e5;
+  background-color: var(--white-color);
 }
 
 .client-list {
@@ -463,7 +467,6 @@ img {
   display: flex;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   align-items: center;
   justify-content: center;
   border: 1px solid #afb1b8;
@@ -698,6 +701,7 @@ footer {
   text-align: center;
 }
 .border {
+  display: block;
   max-width: 370px;
   background: #ffffff;
   border: 1px solid #eeeeee;
